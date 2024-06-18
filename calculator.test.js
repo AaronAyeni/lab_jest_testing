@@ -138,4 +138,16 @@ describe('even', () => {
 
 describe('odd', () => {
 
+  test('can identify an odd number',() => {
+    const expected = true;
+    const actual = odd(9);
+    expect(actual).toBe(expected);
+  });
+
+  test('can identify as not an odd number', () => {
+    const expected = false;
+    const actual = odd(12);
+    expect(actual).toBe(expected);
+  });
+
 });
