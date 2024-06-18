@@ -77,10 +77,28 @@ describe('multiply', () => {
 
 
 
-
 describe('divide', () => {
 
+test('can divide two small positive numbers', () =>{
+  const expected = 2;
+  const actual = divide(6,3);
+  expect(actual).toBe(expected);
+
 });
+
+test('can handle division by zero', () => {
+//   expect(()=> {
+//     divide (2,0);
+// }).toThrow("Division by zero is not allowed.");
+//   });
+expected = Error("Division by zero is not allowed.");
+ actual = divide(2,0);
+ expect(actual).toBe(expected);
+
+});
+});
+
+
 
 describe('modulus', () => {
 
