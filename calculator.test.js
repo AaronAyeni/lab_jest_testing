@@ -41,14 +41,14 @@ describe('sum', () => {
 
 describe('subtract', () => {
   test('can substract two small positive numbers', () => {
-    expected = 1;
-    actual = subtract(3,2);
+    const expected = 1;
+    const actual = subtract(3,2);
     expect(actual).toBe(expected);
   });
 
   test('can subtract a larger number from a smaller number', () => {
-    expected = 85;
-    actual = subtract(90,5);
+    const expected = 85;
+    const actual = subtract(90,5);
     expect(actual).toBe(expected);
   });
 
@@ -60,15 +60,15 @@ describe('subtract', () => {
 describe('multiply', () => {
   
   test('can multiply two negative numbers', () => {
-    expected = 10;
-    actual = multiply(-5, -2);
+    const expected = 10;
+    const actual = multiply(-5, -2);
     expect(actual).toBe(expected);
 
   });
 
   test('can multiply by zero', () => {
-    expected = 0;
-    actual = multiply(3147427,0);
+    const expected = 0;
+    const actual = multiply(3147427,0);
     expect(actual).toBe(expected);
 
   });
@@ -109,17 +109,22 @@ describe('modulus', () => {
   });
 
   test('number can find the modulus of itself', () =>{
-    const expected = 0
+    const expected = 0;
     const actual = modulus(3,3);
     expect(actual).toBe(expected);
 
-  })
+  });
 
 });
 
 describe('even', () => {
 
-  test('can ')
+  test('can identify an even number',() => {
+    const expected = true;
+    const actual = even(6);
+    expect(actual).toBe(expected);
+  });
+  
 
 });
 
