@@ -36,13 +36,47 @@ describe('sum', () => {
 
 });
 
+
+
+
 describe('subtract', () => {
+  test('can substract two small positive numbers', () => {
+    expected = 1;
+    actual = subtract(3,2);
+    expect(actual).toBe(expected);
+  });
+
+  test('can subtract a larger number from a smaller number', () => {
+    expected = 85;
+    actual = subtract(90,5);
+    expect(actual).toBe(expected);
+  });
 
 });
+
+
+
 
 describe('multiply', () => {
+  
+  test('can multiply two negative numbers', () => {
+    expected = 10;
+    actual = multiply(-5, -2);
+    expect(actual).toBe(expected);
+
+  });
+
+  test('can multiply by zero', () => {
+    expected = 0;
+    actual = multiply(3147427,0);
+    expect(actual).toBe(expected);
+
+  });
 
 });
+
+
+
 
 describe('divide', () => {
 
