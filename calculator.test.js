@@ -93,6 +93,13 @@ describe('multiply', () => {
 
   });
 
+  test('can multiply two small positive numbers', () => {
+    // const expected = 8;
+    // const actual = sum(2, 4);
+    // expect(actual).toBe(expected);
+    runOperation(multiply, 2, 4, 8);
+  });
+
 });
 
 
@@ -117,6 +124,7 @@ test('can handle division by zero', () => {
 //  expect(actual).toBe(expected);
 
 // });
+
 });
 
 
