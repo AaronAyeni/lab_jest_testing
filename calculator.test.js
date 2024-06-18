@@ -8,12 +8,19 @@ const {
   odd,
 } = require("./calculator");
 
+//helper function to be reused
+runOperation = (operation, a, b, expected) =>{
+  const actual = operation(a,b);
+  expect(actual).toBe(expected);
+}
+
 describe('sum', () => { 
   
   test('can add two small positive numbers', () => {
-    expected = 5;
-    actual = sum(2, 3);
-    expect(actual).toBe(expected);
+    // const expected = 5;
+    // const actual = sum(2, 3);
+    // expect(actual).toBe(expected);
+    runOperation(sum, 2, 3, 5);
   });
 
   test('can add two large positive numbers', () => { 
