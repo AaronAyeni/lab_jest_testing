@@ -124,15 +124,17 @@ test('can handle division by zero', () => {
 describe('modulus', () => {
   
   test( 'can find modulus of two small positive numbers', () =>{
-    const expected = 1;
-    const actual = modulus(3,2);
-    expect(actual).toBe(expected);
+    // const expected = 1;
+    // const actual = modulus(3,2);
+    // expect(actual).toBe(expected);
+    runOperation(modulus,3,2,1);
   });
 
   test('number can find the modulus of itself', () =>{
-    const expected = 0;
-    const actual = modulus(3,3);
-    expect(actual).toBe(expected);
+    // const expected = 0;
+    // const actual = modulus(3,3);
+    // expect(actual).toBe(expected);
+    runOperation(modulus,3,3,0);
 
   });
 
