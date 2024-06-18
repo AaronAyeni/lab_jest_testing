@@ -50,7 +50,7 @@ describe('sum', () => {
 
 
 describe('subtract', () => {
-  test('can substract two small positive numbers', () => {
+  test('can subtract two small positive numbers', () => {
     // const expected = 1;
     // const actual = subtract(3,2);
     // expect(actual).toBe(expected);
@@ -151,6 +151,13 @@ describe('modulus', () => {
     // expect(actual).toBe(expected);
     runOperation(modulus,3,3,0);
 
+  });
+
+  test('can find modulus of two large positive numbers', () =>{
+    // const expected = 1000;
+    // const actual = modulus(3000,2000);
+    // expect(actual).toBe(expected);
+    runOperation(modulus,3000,2000,1000);
   });
 
 });
