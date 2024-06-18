@@ -124,9 +124,17 @@ describe('even', () => {
     const actual = even(6);
     expect(actual).toBe(expected);
   });
-  
+
+  test('can identify as not an even number', () => {
+    const expected = false;
+    const actual = even(5);
+    expect(actual).toBe(expected);
+  });
 
 });
+
+
+
 
 describe('odd', () => {
 
