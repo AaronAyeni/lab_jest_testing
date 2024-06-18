@@ -27,21 +27,21 @@ describe('sum', () => {
     // const expected = 100000000;
     // const actual = sum(50000000, 50000000);
     // expect(actual).toBe(expected);
-    runOperation(sum,50000000, 50000000, 100000000)
+    runOperation(sum,50000000, 50000000, 100000000);
   });
 
   test('can add two negative numbers', () => {
     // const expected = -5;
     // const actual = sum(-2,-3)
     // expect(actual).toBe(expected);
-    runOperation(sum,-2,-3,-5)
+    runOperation(sum,-2,-3,-5);
   });
 
   test('can add zero', () => {
     // const expected = 2;
     // const actual = sum(2,0);
     // expect(actual).toBe(expected)
-    runOperation(sum,2,0,2)
+    runOperation(sum,2,0,2);
   });
 
 });
@@ -54,20 +54,20 @@ describe('subtract', () => {
     // const expected = 1;
     // const actual = subtract(3,2);
     // expect(actual).toBe(expected);
-    runOperation(subtract,3,2,1)
+    runOperation(subtract,3,2,1);
   });
 
   test('can subtract a larger number from a smaller number', () => {
     // const expected = 85;
     // const actual = subtract(90,5);
     // expect(actual).toBe(expected);
-    runOperation(subtract,90,5,85)
+    runOperation(subtract,90,5,85);
   });
 
   test('can subtract a smaller number from a larger number', () => {
     // const expected = -85 ;
     // const actual = subtract(5,90)
-    runOperation(subtract,5,90,-85)
+    runOperation(subtract,5,90,-85);
   })
 
 });
@@ -78,16 +78,18 @@ describe('subtract', () => {
 describe('multiply', () => {
   
   test('can multiply two negative numbers', () => {
-    const expected = 10;
-    const actual = multiply(-5, -2);
-    expect(actual).toBe(expected);
+    // const expected = 10;
+    // const actual = multiply(-5, -2);
+    // expect(actual).toBe(expected);
+    runOperation(multiply,-5,-2,10);
 
   });
 
   test('can multiply by zero', () => {
-    const expected = 0;
-    const actual = multiply(3147427,0);
-    expect(actual).toBe(expected);
+    // const expected = 0;
+    // const actual = multiply(3147427,0);
+    // expect(actual).toBe(expected);g
+    runOperation(multiply,3147427,0,0);
 
   });
 
