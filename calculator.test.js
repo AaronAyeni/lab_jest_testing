@@ -87,20 +87,33 @@ test('can divide two small positive numbers', () =>{
 });
 
 test('can handle division by zero', () => {
-//   expect(()=> {
-//     divide (2,0);
-// }).toThrow("Division by zero is not allowed.");
-//   });
-expected = Error("Division by zero is not allowed.");
- actual = divide(2,0);
- expect(actual).toBe(expected);
+  expect(()=> {
+    divide (2,0);
+}).toThrow("Division by zero is not allowed.");
+  });
+// expected = Error("Division by zero is not allowed.");
+//  actual = divide(2,0);
+//  expect(actual).toBe(expected);
 
-});
+// });
 });
 
 
 
 describe('modulus', () => {
+  
+  test( 'can find modulus of two small positive numbers', () =>{
+    const expected = 1;
+    const actual = modulus(3,2);
+    expect(actual).toBe(expected);
+  });
+
+  test('number can find the modulus of itself', () =>{
+    const expected = 0
+    const actual = modulus(3,3);
+    expect(actual).toBe(expected);
+
+  })
 
 });
 
