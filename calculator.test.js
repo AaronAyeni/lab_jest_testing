@@ -54,17 +54,20 @@ describe('subtract', () => {
     // const expected = 1;
     // const actual = subtract(3,2);
     // expect(actual).toBe(expected);
+    runOperation(subtract,3,2,1)
   });
 
   test('can subtract a larger number from a smaller number', () => {
-    const expected = 85;
-    const actual = subtract(90,5);
-    expect(actual).toBe(expected);
+    // const expected = 85;
+    // const actual = subtract(90,5);
+    // expect(actual).toBe(expected);
+    runOperation(subtract,90,5,85)
   });
 
   test('can subtract a smaller number from a larger number', () => {
-    const expected = -85 ;
-    const actual = subtract(5,90)
+    // const expected = -85 ;
+    // const actual = subtract(5,90)
+    runOperation(subtract,5,90,-85)
   })
 
 });
