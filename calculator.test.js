@@ -100,9 +100,10 @@ describe('multiply', () => {
 describe('divide', () => {
 
 test('can divide two small positive numbers', () =>{
-  const expected = 2;
-  const actual = divide(6,3);
-  expect(actual).toBe(expected);
+  // const expected = 2;
+  // const actual = divide(6,3);
+  // expect(actual).toBe(expected);
+  runOperation(divide,6,3,2);
 
 });
 
