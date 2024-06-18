@@ -52,6 +52,11 @@ describe('subtract', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can subtract a smaller number from a larger number', () => {
+    const expected = -85 ;
+    const actual = subtract(5,90)
+  })
+
 });
 
 
